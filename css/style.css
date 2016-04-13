@@ -1,0 +1,323 @@
+/*Estilização Padrão*/
+*{
+	margin: 0 0;
+	padding: 0 0;
+}
+body{
+	background-color: #c0deed;
+}
+/* Largura da barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track-piece {
+    background-color: #c0deed;
+    border-radius: 4px;
+}
+
+/* Cor do indicador de rolagem */
+::-webkit-scrollbar-thumb:vertical,
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: #0084b4;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+/* Cor do indicador de rolagem - ao passar o mouse */
+::-webkit-scrollbar-thumb:vertical:hover,
+::-webkit-scrollbar-thumb:horizontal:hover {
+	/*background-color: #717171;*/
+}
+/*Menu Horizontal*/
+header{
+	width: 100%;
+	background-color: #0084b4;
+	display: table;
+	color: #FFFFFF;
+	font-family: 'Open Sans', sans-serif;
+	position: fixed;
+	top: 0;
+	z-index: 9999;
+	box-shadow: 0 -3px 10px #000;
+}
+header > h1{
+	width: 3em;
+	font-size: 30px;
+	font-weight: 300;
+	padding: 0.5em;
+	cursor: pointer;
+}
+header > h2{
+	font-weight: 300;
+	font-size: 15px;
+	margin-top: -2.7em;
+	margin-left: 7.5em;
+	padding-bottom: 1em;
+	cursor: default;
+}
+header > ul{
+	float: right;
+	display: inline-block;
+	list-style: none;
+	margin-top: -3em;
+	margin-right: 1em;
+}
+header > ul > li{
+	display: inline;
+	margin-right: 1em;
+}
+header > ul > li > a{
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 300;
+	color: #FFFFFF;
+}
+header > ul > li > a:hover{
+	border-bottom: 1px solid #FFFFFF;
+}
+.menu_selecionado{
+	border-bottom: 1px solid #FFFFFF;
+}
+
+
+#nova_versao{
+	height: 80%;
+}
+.box{
+	width: 90%;
+	margin-left: 5%;
+	border-radius: 4px;
+	padding-top: 100px;
+	position: fixed;
+	z-index: 8888;
+	background-color: #0084b4;
+	color: #FFFFFF;
+	font-family: 'Open Sans', sans-serif;
+	top: 0;
+	box-shadow: 0 -3px 10px #000;
+	text-align: center;
+	display: none;
+	opacity: 0.95;
+}
+.box > h1, .box > h3{
+	font-weight: 400;
+}
+.box > h2, .box > ul{
+	font-weight: 300;
+}
+.box > ul > li{
+	list-style: none;
+}
+.box > a{
+	float: right;
+	position: absolute;
+	bottom: 0;
+	right: 10px;
+	font-weight: 300;
+	font-size: 50px;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+#sobre_sistema{
+	padding-bottom: 100px;
+}
+#sobre_sistema > p{
+	text-align: justify;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+#sobre_dev{
+	text-align: justify;
+	word-wrap: break-word;
+	padding-bottom: 30px;
+}
+#sobre_dev > .esquerda{
+	float: left;
+	width: 30%;
+	height: 100%;
+}
+#sobre_dev > .direita{
+	float: right;
+	width: 70%;
+	height: 100%;
+}
+#sobre_dev > .esquerda > img{
+	margin-left: 10%;
+	width: 80%;
+	height: auto;
+	opacity: 1;
+}
+#sobre_dev > .esquerda > h1, #sobre_dev > .esquerda > h4{
+	width: 100%;
+	text-align: center;
+	font-weight: 300;
+}
+#sobre_dev > .esquerda > h4 > a{
+	text-decoration: none;
+	font-weight: 300;
+	color: #FFFFFF;
+	width: 100%;
+	text-align: center;
+}
+#sobre_dev > .direita > h1{
+	text-align: center;
+	margin-right: 10%;
+}
+#sobre_dev > .direita > p{
+	text-align: justify;
+	margin-right: 10%;
+}
+#sobre_dev > .direita > p > a{
+	text-decoration: none;
+	color: #FFFFFF;
+	font-weight: 600;
+}
+article{
+	padding: 5%;
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 50px;
+	height: 100%;
+}
+article > form#rifa{
+	width: 40%;
+	background-color: #0084b4;
+	border-radius: 4px;
+	padding: 30px;
+	color: #FFFFFF;
+	float: left;
+}
+article > form#rifa > input{
+	width: 100%;
+	height: 40px;
+	border-radius: 4px;
+	margin-bottom: 4px;
+	border: none;
+	font-size: 15px;
+	border: 1px solid transparent;
+}
+article > form#rifa > input#ultimo{
+	display: none;
+	width: 49%;
+	float: left;
+}
+article > form#rifa > textarea{
+	width: 100%;
+	resize: none;
+	border-radius: 4px;
+	margin-bottom: 4px;
+	border: none;
+	font-size: 15px;
+	border: 1px solid transparent;
+}
+article > form#rifa > input:hover, 
+article > form#rifa > textarea:hover, 
+article > form#config > select:hover,
+article > form#config > a:hover{
+	border: 1px solid #1dcaff;
+}
+article > form#rifa > span{
+	float: right;
+	font-size: 13px;
+	font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+
+article > form#config{
+	width: 40%;
+	margin-top: 4em;
+	background-color: #0084b4;
+	border-radius: 4px;
+	padding: 30px;
+	color: #FFFFFF;
+	float: right;
+}
+article > form#config > select{
+	width: 100%;
+	height: 40px;
+	border-radius: 4px;
+	margin-bottom: 4px;
+	border: none;
+}
+article > form#config > a{
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #c0deed;
+	border-radius: 4px;
+	color: #0084b4;
+	font-size: 25px;
+	font-weight: 300;
+	padding: 10px;
+	margin-top: 20px;
+	border: 1px solid transparent;
+}
+article > form#config > a#gerar_mais{
+	float: right;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	color: #FFFFFF;
+	font-size: 15px;
+	font-weight: 300;
+	background-color: transparent;
+}
+#result{
+	width: 100%;
+	padding-top: 150px;
+	margin-top: 500px;
+	margin-bottom: 500px;
+	display: none;
+}
+#result > a{
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #0084b4;
+	color: #c0deed;
+	font-size: 25px;
+	font-weight: 300;
+	padding: 10px;
+	margin-top: 50px;
+}
+#result > #borda{
+	width: 90%;
+	background-color: #0084b4;
+	margin-left: 5%;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	border-radius: 4px;
+}
+#result > #borda > #mostra_rifa > table{
+	width: 90%;
+	margin-left: 5%;
+	border: 1px solid black;
+	border-collapse: collapse;
+	background-color: #FFFFFF;
+	word-wrap: break-word;
+}
+#result > #borda > #mostra_rifa > table > tbody > tr > td{
+	border: 1px dotted black;
+	padding-left: 1em;
+}
+#result > #borda > #mostra_rifa > table > tbody > tr > td:first-child{
+	width: 20%;
+	text-align: center;
+}
+#result > #borda > #mostra_rifa > table > tbody > tr > td:last-child{
+	width: 50%;
+	word-wrap: break-word;
+}
+.centro{
+	text-align: center;
+}
+.esquerda{
+	text-align: left;
+}
+.direita{
+	text-align: right;
+}

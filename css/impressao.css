@@ -1,0 +1,34 @@
+*{
+	margin: 0 0;
+	padding: 0 0;
+}
+table{
+	border-collapse: collapse;
+	width: 96%;
+	margin-left: 2%;
+	height: 180px;
+	max-height: 180px;
+}
+table > tbody > tr{
+	height: 180px;
+	max-height: 180px;
+}
+table > tbody > tr > td{
+	padding-left: 1em;
+}
+table > tbody > tr > td:first-child{
+	width: 20%;
+	text-align: center;
+}
+table > tbody > tr > td:last-child{
+	width: 50%;
+}
+.centro{
+	text-align: center;
+}
+.esquerda{
+	text-align: left;
+}
+.direita{
+	text-align: right;
+}
